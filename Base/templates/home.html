@@ -1,0 +1,195 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Siddhant Mankawade - Portfolio</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!------ navbar -------->
+    <nav id="navbar" class="flex s-around bg-color">
+        <div class="left-nav">
+            <h2 class="t-white">Portfolio</h2>
+        </div>
+
+        <ul class="right-nav">
+            <li><a href="#home" class="t-white roboto">Home <i class="fa-solid fa-house"></i></a></li>
+            <li><a href="#about" class="t-white roboto">About Me <i class="fa-solid fa-user"></i></a></li>
+            <li><a href="#skills" class="t-white roboto">Skills <i class="fa-solid fa-code"></i></a></li>
+            <li><a href="#projects" class="t-white roboto">Projects <i class="fa-solid fa-project-diagram"></i></a></li>
+            <li><a href="#contact" class="t-white roboto">Contact <i class="fa-solid fa-rocket"></i></a></li>
+        </ul>
+    </nav>
+
+    <!------ home section ------>
+    <section id="home" class="flex s-around sw-80 n-auto">
+        <div class="home-left flex items-center">
+            <div class="home-content">
+                <h6 class="popiness">Hi, I'm</h6>
+                <h1 class="t-white">Siddhant Mankawade</h1>
+                <h4 class="popiness">Data Scientist</h4>
+                <a href="{% static 'pdf/django.pdf' %}" target="_blank">
+                <button class="btn popiness">Resume</button></a>
+                <a class="btn live popiness" id="hire-me" href="#contact"
+                target="_blank">Let's talk</a>
+            </div>
+        </div>
+        <div class="home-right flex s-center items-center">
+            <div class="circle flex s-center" id="mainimage">
+                <img src="{% static 'images/Profile.png' %}" alt="Siddhant Mankawade">
+            </div>
+        </div>
+    </section>
+
+<!-- About Section -->
+<section id="about">
+    <div class="about-container">
+        <div class="about-left">
+            <h1 class="section-title">About</h1>
+            <div class="about-content">
+                <h2>Siddhant Mankawade</h2>
+                <p>
+                    I’m Siddhant Mankawade, a pre-final year Computer Science student at GHRCE Nagpur with a strong passion for data science and machine learning. I am fascinated by how data can be transformed into actionable insights and how intelligent models can help solve real-world problems.
+
+While my primary career goal is to become a data scientist, I also enjoy exploring web development as a complementary skill to enhance my projects and broaden my technical expertise.
+
+One of my key projects is a Crime Prediction Model built using machine learning techniques, which reflects my interest in applying data-driven solutions to societal challenges. I believe my curiosity, analytical mindset, and unique approach to problem-solving set me apart.
+                </p>
+                <a href="#contact" class="btn">Hire me</a>
+            </div>
+        </div>
+        <div class="about-right">
+            <img src="{% static 'images/SIDD cartoon.png' %}" alt="Siddhant Avatar">
+        </div>
+    </div>
+</section>
+
+
+    <!--skills section-->
+
+    <section id="skills">
+        <h1 class="t-center my-2 t-white f-2">Skills</h1>
+        <div class="skills-logos-container flex wrap s-center gap-4 py-4">
+            <div class="skill-item flex col s-center">
+                <img src="{% static 'images/python.png' %}" alt="Python Logo" class="skill-logo">
+                <span class="t-white mt-1">Python</span>
+            </div>
+            
+            <div class="skill-item flex col s-center">
+                <img src="{% static 'images/java.png' %}" alt="Java Logo" class="skill-logo">
+                <span class="t-white mt-1">DSA with Java</span>
+            </div>
+            <div class="skill-item flex col s-center">
+                <img src="{% static 'images/ML.png' %}" alt="Machine Learning Logo" class="skill-logo">
+                <span class="t-white mt-1">Machine Learning</span>
+            </div>
+
+            <div class="skill-item flex col s-center">
+                <img src="{% static 'images/postgreSQL.png' %}" alt="PostgreSQL Logo" class="skill-logo">
+                <span class="t-white mt-1">PostgreSQL</span>
+            </div>
+
+            <div class="skill-item flex col s-center">
+                <img src="{% static 'images/tableau.png' %}" alt="Tableau Logo" class="skill-logo">
+                <span class="t-white mt-1">Tableau</span>
+            </div>
+            <div class="skill-item flex col s-center">
+                <img src="{% static 'images/html.png' %}" alt="HTML Logo" class="skill-logo">
+                <span class="t-white mt-1">HTML</span>
+            </div>
+            <div class="skill-item flex col s-center">
+                <img src="{% static 'images/css.png' %}" alt="CSS Logo" class="skill-logo">
+                <span class="t-white mt-1">CSS</span>
+            </div>
+            <div class="skill-item flex col s-center">
+                <img src="{% static 'images/django.png' %}" alt="Django Logo" class="skill-logo">
+                <span class="t-white mt-1">Django</span>
+            </div>
+            <div class="skill-item flex col s-center">
+                <img src="{% static 'images/excel.png' %}" alt="Excel Logo" class="skill-logo">
+                <span class="t-white mt-1">Excel</span>
+            </div>
+            <div class="skill-item flex col s-center">
+                <img src="{% static 'images/ai.png' %}" alt="Generative AI Logo" class="skill-logo">
+                <span class="t-white mt-1">Generative AI</span>
+            </div>
+        </div>
+    </section>
+
+
+<!---proect section---->
+<section id="projects">
+    <h2>Projects</h2>
+    <div class="project-container">
+      <div class="project-item">
+        <img src="images/project1.jpg" alt="Project Screenshot">
+        <h3>Crime Rate Prediction</h3>
+        <p>This is a powerful project which can detect future crime rates,rapes and murders in each state.This project is supposed to indicate where the focus of improvement in India is. It uses ML model to predict crimes,murders,rapes in future according to factors like literacy rates,unemployment rates,poverty rates and police per 100,000.The ML model combines these factors ,takes out importace of that factor in that statea and derives with *()* percent accuracy.this enables law enforcement agencies and policymakers to make informed decisions.</p>
+        <div class="project-links">
+          <a href="https://github.com/your-repo" target="_blank">View Code</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+
+    <!--Contact section -->
+    <section id="contact" class="m-b-1">
+        <h1 class="t-center my-2 t-white f-2">Contact Me</h1>
+        <div class="contact-container flex s-around items-center">
+            <div class="form" id="contactform">
+                <form method="post">
+                    <form method="post">
+                        {% csrf_token %}
+                    
+                    <div class="name form-div">
+                        <input type="text" name="name" id="name" class="popiness" placeholder="Enter your name">
+                    </div>
+
+                    <div class="email form-div">
+                        <input type="email" name="email" id="email" class="popiness" placeholder="Enter your Email">
+                    </div>
+
+                    <div class="phone form-div">
+                        <input type="tel" name="number" id="phone" class="popiness" placeholder="Enter your phone number">
+                    </div>
+
+                    <div class="textarea form-div">
+                        <textarea name="content" id="textarea" cols="30" rows="10" class="popiness" placeholder="Enter your message"></textarea>
+                    </div>
+
+                    <button type="submit" class="btn popiness" id="submit">SEND</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!------ footer section ------>
+    <footer id="footer">
+        <ul class="flex s-center w-80 m-auto my-2 res">
+            <li><a href="#home" class="popiness">Home</a></li>
+            <li><a href="#about" class="popiness">About Me</a></li>
+            <li><a href="#skills" class="popiness">Skills</a></li>
+            <li><a href="#projects" class="popiness">Projects</a></li>
+            <li><a href="#contact" class="popiness">Contact</a></li>
+        </ul>
+        <ul class="flex s-center w-80 font-awesome">
+            <a href="" target="_blank">
+                <li><i class="fa-brands fa-linkedin-in"></i></li>
+            </a>
+            <a href="" target="_blank">
+                <li><i class="fa-brands fa-github"></i></li>
+            </a>
+            <a href="" target="_blank">
+                <li><i class="fa-brands fa-instagram"></i></li>
+            </a>
+        </ul>
+        <p class="t-center my-2 popiness">&copy; All rights reserved - <span class="cpy-white popiness">SID_M</span></p>
+    </footer>
+</body>
+</html>

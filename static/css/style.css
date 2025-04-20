@@ -1,0 +1,762 @@
+/* Reset and Global Styles */
+body {
+    border: 5px solid red;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #1f1f38;
+    color: #fff;
+}
+
+/* Navbar Styling */
+#navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    line-height: 4rem;
+    padding: 0 2rem;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    background-color: #1f1f38; /* Ensures navbar doesn't go transparent */
+    border-bottom: 0.5px solid #ffffff52;
+    margin-bottom: 1rem;
+}
+
+.left-nav h2 {
+    color: white;
+}
+
+/* Navbar Right Side */
+.right-nav {
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+
+.right-nav li {
+    margin: 0 1rem;
+}
+
+.right-nav li a {
+    text-decoration: none;
+    padding: 0.5rem 0.9rem;
+    color: white;
+    transition: all 0.3s ease;
+}
+
+/* Hover Effect */
+.right-nav li a:hover {
+    background-color: #fff;
+    color: #1f1f38;
+    border-radius: 0.4rem;
+}
+
+/* Responsive classes (if needed later) */
+.right,
+.checkBtn,
+#check {
+    display: none;
+}
+
+/* Home Section */
+#home {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 80%;
+    margin: auto;
+    padding: 4rem 0;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.home-left {
+    flex: 1;
+    display: flex;
+    align-items: center;
+}
+
+.home-content h6 {
+    font-size: 1.2rem;
+    color: #ccc;
+    margin-bottom: 0.5rem;
+}
+
+.home-content h1 {
+    font-size: 3rem;
+    color: #fff;
+    margin-bottom: 0.5rem;
+}
+
+.home-content h4 {
+    font-size: 1.5rem;
+    color: #00bcd4;
+    margin-bottom: 1.5rem;
+}
+
+.home-content .btn {
+    padding: 0.7rem 1.5rem;
+    background-color: #00bcd4;
+    color: #fff;
+    border: none;
+    border-radius: 0.4rem;
+    cursor: pointer;
+    text-decoration: none;
+    margin-right: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.home-content .btn:hover {
+    background-color: #0199a0;
+}
+
+.btn.live {
+    background-color: transparent;
+    border: 1px solid #00bcd4;
+}
+
+.btn.live:hover {
+    background-color: #00bcd4;
+    color: #1f1f38;
+}
+
+/* Image Circle */
+.home-right .circle {
+    width: 450px;
+    height: 450px;
+    border-radius: 50%;
+    background: linear-gradient(145deg, #1a1a2e, #1f1f38);
+    box-shadow: 0 0 20px rgba(0, 188, 212, 0.2);
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.home-right .circle img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+/* ==== About Section ==== */
+#about {
+    padding: 4rem 2rem;
+    background-color: #1e1e3f;
+}
+
+.about-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3rem;
+    justify-content: center;
+    align-items: center;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.about-left {
+    flex: 1 1 60%;
+    max-width: 700px;
+}
+
+.about-right {
+    flex: 1 1 30%;
+    text-align: center;
+}
+
+.section-title {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    color: #fff;
+    text-align: left;
+}
+
+.about-content h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #ffffff;
+}
+
+.about-content p {
+    font-size: 1.1rem;
+    line-height: 1.7;
+    color: #ddd;
+    margin-bottom: 2rem;
+}
+
+.about-right img {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 1rem;
+}
+
+/* Button */
+.btn {
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    background-color: #00bcd4;
+    color: #1a1a35;
+    border: none;
+    border-radius: 0.5rem;
+    text-decoration: none;
+    transition: 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #0098ab;
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+    .about-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .section-title {
+        text-align: center;
+    }
+
+    .about-left, .about-right {
+        max-width: 100%;
+    }
+
+    .about-content h2 {
+        font-size: 1.75rem;
+    }
+
+    .about-content p {
+        font-size: 1rem;
+    }
+}
+
+/* Button Styling */
+.btn {
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    color: #1a1a35;
+    background-color: #00bcd4;
+    border: none;
+    border-radius: 0.5rem;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #00a2b2;
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 768px) {
+    .about-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about-left, .about-right {
+        max-width: 100%;
+    }
+
+    .about-content h1 {
+        font-size: 1.8rem;
+    }
+
+    .about-content p {
+        font-size: 1rem;
+    }
+
+    .btn {
+        font-size: 0.95rem;
+    }
+}
+
+
+
+/* Skills Section */
+
+
+#skills {
+    padding: 4rem 0;
+    background-color: #1a1a35;  /* Slightly different background for section contrast */
+}
+
+.skills-logos-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 3rem;
+    padding: 2rem 1rem;
+}
+
+.skill-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #2c2c6c;
+    border-radius: 1rem;
+    padding: 1.5rem;
+    width: 150px;
+    height: 150px;
+    justify-content: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.skill-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+.skill-logo {
+    width: 80px;  /* Significantly larger icons */
+    height: 80px;
+    object-fit: contain;  /* This ensures the image maintains its aspect ratio */
+    margin-bottom: 1rem;  /* More space between icon and text */
+    filter: drop-shadow(0 2px 4px rgba(0, 188, 212, 0.3));  /* Adds a subtle glow to icons */
+}
+
+.skill-item span {
+    font-size: 1rem;
+    font-weight: 500;
+    text-align: center;
+    color: #fff;
+    margin-top: auto;  /* This pushes the text to the bottom of the container */
+}
+
+/* For better visual hierarchy */
+.skill-item:nth-child(odd) {
+    background-color: #2d2d72;
+}
+
+.skill-item:nth-child(even) {
+    background-color: #232355;
+}
+
+/* Media queries for responsiveness */
+@media screen and (max-width: 768px) {
+    .skills-logos-container {
+        gap: 1.5rem;
+    }
+    
+    .skill-item {
+        width: 130px;
+        height: 130px;
+        padding: 1rem;
+    }
+    
+    .skill-logo {
+        width: 60px;
+        height: 60px;
+    }
+}
+
+
+
+/* ==== Projects Section ==== */
+/* ==== Projects Section ==== */
+#projects {
+    padding: 4rem 1rem;
+    background-color: #1a1a35;
+    text-align: center;
+}
+
+#projects h2 {
+    font-size: 2.5rem;
+    color: #00bcd4;
+    margin-bottom: 2.5rem;
+}
+
+.project-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    max-width: 1300px;
+    margin: auto;
+}
+
+.project-item {
+    background: #2c2c6c;
+    border-radius: 1.5rem;
+    width: 90%;
+    max-width: 900px;
+    padding: 2rem;
+    overflow: hidden;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.35);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.project-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 14px 30px rgba(0, 0, 0, 0.4);
+}
+
+.project-item img {
+    width: 100%;
+    height: auto;
+    max-height: 450px;
+    object-fit: cover;
+    border-radius: 1rem;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 4px 12px rgba(0, 188, 212, 0.15);
+}
+
+.project-item h3 {
+    font-size: 2rem;
+    color: #ffffff;
+    margin-bottom: 0.75rem;
+}
+
+.project-item p {
+    font-size: 1.1rem;
+    color: #ddd;
+    line-height: 1.7;
+    max-width: 800px;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.project-links {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.project-links a {
+    padding: 0.7rem 1.2rem;
+    font-size: 1rem;
+    text-decoration: none;
+    border-radius: 0.4rem;
+    transition: all 0.3s ease;
+    border: 1px solid #00bcd4;
+    color: #00bcd4;
+    background: transparent;
+}
+
+.project-links a:hover {
+    background-color: #00bcd4;
+    color: #1f1f38;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .project-item {
+        width: 95%;
+        padding: 1.5rem;
+    }
+
+    .project-item h3 {
+        font-size: 1.5rem;
+    }
+
+    .project-item p {
+        font-size: 1rem;
+    }
+
+    .project-item img {
+        max-height: 250px;
+    }
+}
+
+
+
+
+/* Contact me Section */
+#contact {
+    padding: 3rem 0;
+}
+
+.contact-container {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.form {
+    display: flex;
+    width: 80%;
+    padding: 0 2rem;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-div {
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+.form-div input,
+textarea {
+    border: 2px solid rgba(255, 255, 255, 0.4);
+    border-radius: .5rem;
+    width: 100%;
+    font-size: .9rem;
+    background: transparent;
+    margin: 0.5rem 0;
+    padding: 0.5rem 1rem;
+    color: rgb(255, 255, 255);
+    resize: none;
+}
+
+.form-div input:focus,
+textarea:focus {
+    outline: none;
+    border-color: #00bcd4;
+}
+
+/* Footer Section  */
+#footer {
+    background-color: #010101;
+    padding: 2rem 1rem;
+}
+
+#footer ul {
+    display: flex;
+    justify-content: center;
+    margin: 1rem 0;
+}
+
+#footer ul li {
+    list-style: none;
+    margin: 0 1rem;
+}
+
+#footer ul li a {
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: white;
+    transition: all .5s;
+}
+
+#footer ul li a:hover {
+    color: #00bcd4;
+}
+
+.font-awesome {
+    margin: 1.1rem auto;
+}
+
+.font-awesome li i {
+    background-color: #1f1f38;
+    padding: 0.6rem;
+    border: 1px solid #1f1f38;
+    color: #fff;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: all .4s ease-in-out;
+}
+
+.font-awesome li i:hover {
+    border: 1px solid #1f1f38;
+    border-radius: .5rem;
+    background: transparent;
+    color: #00bcd4;
+}
+
+#footer p {
+    color: white;
+    font-size: 0.9rem;
+    text-align: center;
+}
+
+.cpy-white {
+    color: #00bcd4;
+    font-weight: bold;
+}
+
+/* Utility Classes */
+.popiness {
+    font-family: 'Poppins', sans-serif;
+}
+
+.roboto {
+    font-family: 'Roboto', sans-serif;
+}
+
+.flex {
+    display: flex;
+}
+
+.wrap {
+    flex-wrap: wrap;
+}
+
+.s-between {
+    justify-content: space-between;
+}
+
+.s-around {
+    justify-content: space-around;
+}
+
+.s-center {
+    justify-content: center;
+}
+
+.items-center {
+    align-items: center;
+}
+
+.f-col {
+    flex-direction: column;
+}
+
+.p-relative {
+    position: relative;
+}
+
+.t-white {
+    color: #fff;
+}
+
+.bg-color {
+    background-color: #1f1f38;
+}
+
+.t-center {
+    text-align: center;
+}
+
+.my-2 {
+    margin: 2rem 0;
+}
+
+.f-2 {
+    font-size: 2rem;
+}
+
+.m-b-1 {
+    margin-bottom: 1rem;
+}
+
+.w-50 {
+    width: 50%;
+}
+
+.w-80 {
+    width: 80%;
+}
+
+.h-50 {
+    height: 50vh;
+}
+
+.mx-1 {
+    margin: 0 1rem;
+}
+
+.m-top {
+    margin-top: 1rem;
+}
+
+.m-auto {
+    margin: auto;
+}
+
+.sw-80 {
+    width: 80%;
+}
+
+.n-auto {
+    margin: auto;
+}
+
+.btn {
+    margin-left: 0 .5rem;
+    font-size: 1rem;
+    color: #00bcd4;
+    cursor: pointer;
+    padding: 0.75rem 1.2rem;
+    border: 1px solid #00bcd4;
+    border-radius: 0.4rem;
+    background: transparent;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    display: inline-block;
+    transition: all 0.3s ease;
+}
+
+.button {
+    display: flex;
+    justify-content: space-around;
+}
+
+.btn:hover {
+    color: #1f1f38;
+    border-color: #fff;
+    background-color: #fff;
+}
+
+.live {
+    color: #1f1f38;
+    background-color: #00bcd4;
+}
+
+/* Media Queries for Responsiveness */
+@media screen and (max-width: 768px) {
+    /* Navbar */
+    #navbar {
+        padding: 0 1rem;
+    }
+    
+    .right-nav {
+        flex-direction: column;
+        position: fixed;
+        top: 4rem;
+        right: -100%;
+        width: 70%;
+        height: 100vh;
+        background-color: #1f1f38;
+        transition: all 0.5s ease;
+        padding-top: 2rem;
+    }
+    
+    .right-nav.active {
+        right: 0;
+    }
+    
+    .right-nav li {
+        margin: 1rem 0;
+    }
+    
+    .checkBtn {
+        display: block;
+        font-size: 1.5rem;
+        cursor: pointer;
+    }
+    
+    /* Home */
+    .home-right .circle {
+        width: 300px;
+        height: 300px;
+    }
+    
+    /* Projects */
+    .project-item {
+        width: 90%;
+    }
+    
+    /* Contact */
+    .form {
+        width: 95%;
+        padding: 0 1rem;
+    }
+}
